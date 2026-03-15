@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Store Elec - Pure Power</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body { font-family: 'Urbanist', sans-serif; background-color: white; }
+        .font-rockstar { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Forçage des couleurs Mike Store */
+        :root {
+            --p: 27 100% 50%; /* Orange Mike Store */
+        }
+
+        .bg-primary { background-color: #FF7300 !important; }
+        .border-primary { border-color: #FF7300 !important; }
+        .text-primary { color: #FF7300 !important; }
+        .btn-primary { background-color: #FF7300 !important; border-color: #000 !important; color: white !important; }
+        .btn-primary:hover { background-color: #000 !important; color: white !important; }
+
+        .gritty-text {
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: #000000;
+        }
+
+        /* Hover sans soulèvement, juste bordure orange */
+        .card-hover-effect:hover {
+            border-color: #FF7300 !important;
+            border-width: 3px;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-black">
+
+    <div class="navbar bg-white border-b-2 border-black sticky top-0 z-50 px-4 flex flex-col md:flex-row gap-4 py-4">
+        <div class="navbar-start hidden md:flex">
+            <ul class="menu menu-horizontal font-black uppercase text-xs tracking-widest">
+                <li><a href="#services" class="hover:text-primary">Services</a></li>
+                <li><a href="#types" class="hover:text-primary">Types de volets</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-center">
+            <a href="#" class="block">
+                <img src="logo.png" alt="Mike Store Elec" class="h-24 md:h-32 w-auto mx-auto">
+            </a>
+        </div>
+
+        <div class="navbar-end hidden md:flex">
+            <a href="#contact" class="btn btn-primary font-black uppercase">Obtenir un Devis</a>
+        </div>
+    </div>
+
+    <div class="hero min-h-[60vh] border-b-4 border-black" style="background-image: url('https://images.unsplash.com/photo-1593113616828-6f22bca04804?q=80&w=2070&auto=format&fit=crop'); background-position: center 30%;">
+        <div class="hero-overlay bg-opacity-40 bg-white"></div>
+        <div class="hero-content text-center text-black">
+            <div class="max-w-2xl p-8 bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+                <div class="badge bg-black text-white font-black uppercase mb-4 p-4 rounded-none">Lyon & Environs</div>
+                <h1 class="mb-5 text-5xl md:text-7xl font-rockstar gritty-text">Volets Roulants Automatisés</h1>
+                <p class="mb-8 text-lg font-bold uppercase tracking-tight"> Installation • Motorisation pour volet roulant electrique.</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#types" class="btn btn-outline border-2 border-black text-black font-black hover:bg-black hover:text-white rounded-none">Nos Modèles</a>
+                    <a href="#contact" class="btn btn-primary font-black rounded-none">Intervention Rapide</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="font-rockstar text-5xl text-center mb-16 gritty-text">Nos Expertises</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-2 border-black">
+            
+            <div class="card bg-white border-r-2 border-b-2 border-black rounded-none transition-all card-hover-effect group">
+                <div class="card-body p-10">
+                    <div class="text-5xl text-black mb-6 group-hover:text-primary transition-colors">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="font-rockstar text-2xl">Installation Pro</h3>
+                    <p class="font-medium text-zinc-600">Pose de volets roulants alu renforcés. Plus de 20 ans d'expérience sur Lyon.</p>
+                </div>
+            </div>
+            
+            <div class="card bg-white border-r-2 border-b-2 border-black rounded-none transition-all card-hover-effect group">
+                <div class="card-body p-10">
+                    <div class="text-5xl text-black mb-6 group-hover:text-primary transition-colors">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-rockstar text-2xl">Motorisation</h3>
+                    <p class="font-medium text-zinc-600">On électrise vos vieux volets manuels. Pose intérieure et extérieure.</p>
+                </div>
+            </div>
+            
+            <div class="card bg-white border-b-2 border-black rounded-none transition-all card-hover-effect group">
+                <div class="card-body p-10">
+                    <div class="text-5xl text-black mb-6 group-hover:text-primary transition-colors">
+                        <i class="fa-solid fa-house-laptop"></i>
+                    </div>
+                    <h3 class="font-rockstar text-2xl">Domotique</h3>
+                    <p class="font-medium text-zinc-600">Contrôle total par smartphone. Compatible avec les plus grandes marques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 bg-zinc-50 border-t-4 border-black">
+        <div class="max-w-5xl mx-auto border-4 border-black shadow-[15px_15px_0px_0px_#FF7300]">
+            <div class="flex flex-col md:flex-row">
+                <div class="bg-primary p-12 text-black md:w-2/5 border-b-4 md:border-b-0 md:border-r-4 border-black">
+                    <h2 class="font-rockstar text-5xl mb-8">Contact</h2>
+                    <div class="space-y-6 font-black uppercase text-sm tracking-widest">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone-square text-2xl"></i>
+                            <span>01 23 45 67 89</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-2xl"></i>
+                            <span>mikel@mikestore.elec</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-location-arrow text-2xl"></i>
+                            <span>Région Lyonnaise</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-12 md:w-3/5 bg-white">
+                    <div class="form-control w-full">
+                        <label class="label font-black uppercase text-xs">Nom / Société</label>
+                        <input type="text" placeholder="Votre nom" class="input input-bordered w-full border-2 border-black rounded-none focus:outline-none focus:border-primary" />
+                    </div>
+                    <div class="form-control w-full mt-6">
+                        <label class="label font-black uppercase text-xs">Type de demande</label>
+                        <select class="select select-bordered w-full border-2 border-black rounded-none focus:outline-none focus:border-primary font-bold">
+                            <option>Nouveau Volet</option>
+                            <option>Motorisation</option>
+                            <option>Dépannage</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary w-full mt-10 font-black uppercase text-lg rounded-none border-2 border-black">Envoyer la demande</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center p-12 bg-black text-white rounded-none">
+        <aside>
+            <img src="logo.png" alt="Mike Store" class="h-16 w-auto mb-4 brightness-0 invert">
+            <p class="font-rockstar text-xl">Mike Store Elec</p>
+            <p class="text-xs uppercase tracking-widest opacity-60">20ans d'expérience • Expert Volets Roulants</p>
+        </aside> 
+    </footer>
+
+</body>
+</html>
